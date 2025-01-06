@@ -10,11 +10,10 @@ OFFSET = 50
 GREY = (29, 29, 27)
 YELLOW = (243, 216, 63)
 
-# Initialize fonts - Added title_font for larger text on main screens
 font = pygame.font.Font("Font/monogram.ttf", 40)
 title_font = pygame.font.Font("Font/monogram.ttf", 80)
 
-# Game text surfaces - Added new surfaces for different game states
+# Game text surfaces 
 level_surface = font.render('LEVEL 01', False, YELLOW)
 game_over_surface = title_font.render("GAME OVER", False, YELLOW)
 score_text_surface = font.render("SCORE", False, YELLOW)
@@ -40,8 +39,6 @@ pygame.time.set_timer(SHOOT_LASER, 300)
 MYSTERYSHIP = pygame.USEREVENT + 1
 pygame.time.set_timer(MYSTERYSHIP, random.randint(4000, 8000))
 
-
-# New functions for drawing different game state screens
 def draw_home_screen():
     screen.fill(GREY)
     pygame.draw.rect(screen, YELLOW, (10, 10, 780, 780), 2, 0, 60, 60, 60, 60)
