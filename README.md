@@ -23,7 +23,16 @@ This version of Space Invaders introduces increasing difficulty: with each passi
    ```bash
    pip install pygame
    ```
-
+## Running the Game
+1. Ensure you are in the project directory:
+   ```bash
+   cd space-invaders
+   ```
+2. Run the main Python file to start the game:
+   ```bash
+   python main.py
+   ```
+   
 ## Files and Directories
 The following files and directories are included in the `space-invaders` folder:
 - **`game.py`**: Main game logic
@@ -39,15 +48,6 @@ The following files and directories are included in the `space-invaders` folder:
 - **`.gitattributes`**: Git configuration
 - **`.venv/`**: Virtual environment for dependencies
 
-## Running the Game
-1. Ensure you are in the project directory:
-   ```bash
-   cd space-invaders
-   ```
-2. Run the main Python file to start the game:
-   ```bash
-   python main.py
-   ```
 
 ## Controls
 | Key         | Description         |
@@ -58,5 +58,4 @@ The following files and directories are included in the `space-invaders` folder:
 ## Gameplay
 - With each level, the aliens increase slightly in movement speed and fire rate of lasers
 - You have three lives to survive as long as possible
-
 ![Invader_Gameplay](https://github.com/user-attachments/assets/08a532e4-e762-4441-9789-e4bd64080382)
