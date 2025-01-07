@@ -11,11 +11,11 @@ With each passing level aliens move faster and fire lasers more frequently. To c
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/navanateR/Space_Invaders.git
+   git clone https://github.com/navanateR/Space_Invader.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Space_Invaders
+   cd Space_Invader
    ```
 3. Ensure you have Python installed on your system.
 4. Install the required dependencies:
@@ -25,7 +25,7 @@ With each passing level aliens move faster and fire lasers more frequently. To c
 ## Running the Game
 1. Ensure you are in the project directory:
    ```bash
-   cd Space_Invaders
+   cd Space_Invader
    ```
 2. Run the main Python file to start the game:
    ```bash
