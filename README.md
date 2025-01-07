@@ -57,4 +57,5 @@ The following files and directories are included in the `space-invaders` folder:
 
 ## Gameplay
 - In between each round you are able to position yourself before begining
-![Invader_Gameplay](https://github.com/user-attachments/assets/08a532e4-e762-4441-9789-e4bd64080382)
+![gameplay](https://github.com/user-attachments/assets/642258c2-726f-4640-9305-47337b38f607)
+
