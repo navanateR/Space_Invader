@@ -15,7 +15,7 @@ With each passing level aliens move faster and fire lasers more frequently. To c
    ```
 2. Navigate to the project directory:
    ```bash
-   cd space-invaders
+   cd Space_Invaders
    ```
 3. Ensure you have Python installed on your system.
 4. Install the required dependencies:
@@ -25,7 +25,7 @@ With each passing level aliens move faster and fire lasers more frequently. To c
 ## Running the Game
 1. Ensure you are in the project directory:
    ```bash
-   cd space-invaders
+   cd Space_Invaders
    ```
 2. Run the main Python file to start the game:
    ```bash
@@ -41,7 +41,7 @@ The following files and directories are included in the `space-invaders` folder:
 - **`spaceship.py`**: Player spaceship controls
 - **`obstacle.py`**: Obstacle interactions
 - **`leaderboard.py`**: Handles high scores and the board
-- **'leaderboard.json'**: Created at run to store score values
+- **`leaderboard.json`**: Created at run to store score values
 - **`Font/`**: Contains font resources
 - **`Graphics/`**: Contains graphical assets
 - **`Sounds/`**: Contains sound effects
@@ -57,5 +57,7 @@ The following files and directories are included in the `space-invaders` folder:
 
 ## Gameplay
 - In between each round you are able to position yourself before begining
-![gameplay](https://github.com/user-attachments/assets/642258c2-726f-4640-9305-47337b38f607)
+- After each attempt if your score was high enough to make the leaderboards you are prompted to enter three characters to secure your spot 
+![Untitled design](https://github.com/user-attachments/assets/286a910a-5f63-4a44-b3bd-7028edff6942)
+
 
