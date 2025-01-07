@@ -11,7 +11,7 @@ With each passing level aliens move faster and fire lasers more frequently. To c
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/space-invaders.git
+   git clone https://github.com/navanateR/Space_Invaders.git
    ```
 2. Navigate to the project directory:
    ```bash
