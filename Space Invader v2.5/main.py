@@ -32,7 +32,6 @@ creator_text_surface = font.render("* navanateR", False, (WHITE))
 
 screen = pygame.display.set_mode((SCREEN_WIDTH + OFFSET, SCREEN_HEIGHT + 2 * OFFSET))
 pygame.display.set_caption("Python Space Invaders")
-
 clock = pygame.time.Clock()
 game = Game(SCREEN_WIDTH, SCREEN_HEIGHT, OFFSET)
 
@@ -70,7 +69,6 @@ def show_thanks_screen():
 
     pygame.display.update()
     pygame.time.wait(2000)
-
 
 # Main game loop
 while True:
@@ -122,14 +120,14 @@ while True:
                         (SCREEN_WIDTH // 2 - start_level_text.get_width() // 2,
                          SCREEN_HEIGHT // 1.5))
 
-            # Still allow player movement while waiting
+            # Allow movement between rounds
             game.spaceship_group.update()
             game.spaceship_group.draw(screen)
             if keys[pygame.K_SPACE]:
                 game.aliens_can_move = True
 
         else:
-            # Normal gameplay updates
+            # Gameplay updates
             game.spaceship_group.update()
             game.move_aliens()
             game.alien_lasers_group.update()
@@ -150,7 +148,7 @@ while True:
             game.alien_lasers_group.draw(screen)
             game.mystery_ship_group.draw(screen)
 
-        # HUD elements
+        # HUD 
 
         level_surface = font.render(f'LEVEL {game.current_level:02d}', False, YELLOW)
         screen.blit(level_surface, (570, 740, 50, 50))
@@ -178,7 +176,7 @@ while True:
             screen.blit(initials_surface, (575, 42.5, 50, 50))
             screen.blit(highscore_surface, (625, 40, 50, 50))
 
-        # Draw game sprites
+        # Draw Sprites
 
         game.spaceship_group.draw(screen)
         game.spaceship_group.sprite.lasers_group.draw(screen)
@@ -218,7 +216,7 @@ while True:
                         (SCREEN_WIDTH // 2 - leaderboard_title_surface.get_width() // 2,
                          200))
 
-            # Draw leaderboard entries
+            # Leaderboard entries
             y_pos = 250
 
             for entry in game.leaderboard.scores:
