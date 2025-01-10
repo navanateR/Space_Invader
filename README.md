@@ -5,7 +5,7 @@
 [![Release](https://img.shields.io/badge/release-v2.5-orange.svg?style=flat)]()
 
 ## About
-Space Invaders was the first fixed shooter and the first video game with endless gameplay, setting the template for the genre. The goal is to defeat wave after wave of descending aliens with a horizontally moving laser cannon to earn as many points as possible.
+Space Invaders was the first fixed shooter and the first video game with endless gameplay, setting the template for the genre. The goal is to see how long you can survive defeating wave after wave of descending aliens with a horizontally moving laser cannon while earning as many points as possible.
 With each passing level aliens move faster and fire lasers more frequently. To complete a level, the player must destroy all the aliens before they either touch the obstacles or manage to take the player's three lives.
 
 ## Installation
