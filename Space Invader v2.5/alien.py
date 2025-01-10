@@ -1,6 +1,5 @@
 import pygame, random
 
-
 class Alien(pygame.sprite.Sprite):
     def __init__(self, type, x, y):
         super().__init__()
@@ -17,7 +16,6 @@ class Alien(pygame.sprite.Sprite):
 
     def update(self, direction):
         self.rect.x += direction
-
 
 class MysteryShip(pygame.sprite.Sprite):
     def __init__(self, screen_width, offset):
@@ -38,6 +36,7 @@ class MysteryShip(pygame.sprite.Sprite):
 
     def update(self):
         self.rect.x += self.speed
+        
         if self.rect.right > self.screen_width + self.offset / 2:
             self.kill()
         elif self.rect.left < self.offset / 2:
@@ -48,7 +47,6 @@ class Explosion(pygame.sprite.Sprite):
     def __init__(self, pos, color):
         super().__init__()
         self.image = pygame.image.load("Graphics/alien_explosion.png")
-
         colored_surface = pygame.Surface(self.image.get_size()).convert_alpha()
         colored_surface.fill(color)
         self.image.blit(colored_surface, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
