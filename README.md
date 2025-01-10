@@ -56,7 +56,7 @@ The following files and directories are included in the `space-invaders` folder:
 | `Space Bar` | Shoot Laser         |
 
 ## Gameplay
-- In between each round you are able to position yourself before begining
+- In between each round you are able to position yourself before begining and the round wont begin until you press  the `Space Bar`
 - After each attempt if your score was high enough to make the leaderboards you are prompted to enter three characters to secure your spot 
 ![Untitled design](https://github.com/user-attachments/assets/286a910a-5f63-4a44-b3bd-7028edff6942)
 
