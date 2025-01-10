@@ -1,7 +1,6 @@
 import json
 import os
 
-
 class Leaderboard:
     def __init__(self):
         self.scores = []
@@ -42,10 +41,9 @@ class Leaderboard:
         return len(self.scores) < 5
 
     def add_score(self, name, score):
-
         new_entry = {"name": name, "score": score}
-
         insert_index = len(self.scores)
+        
         for i, entry in enumerate(self.scores):
             if score > entry["score"]:
                 insert_index = i
