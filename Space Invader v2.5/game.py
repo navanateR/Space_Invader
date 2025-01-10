@@ -13,7 +13,7 @@ class Game:
         self.screen_height = screen_height
         self.offset = offset
 
-        # Initialize leaderboard first, before any references to it
+        # Initialize leaderboard 
         self.leaderboard = Leaderboard()
         self.highscore = self.get_current_highscore()
 
@@ -56,7 +56,6 @@ class Game:
         return obstacles
 
     def get_current_highscore(self):
-        """Get the current highest score from the leaderboard"""
         if self.leaderboard.scores:
             return self.leaderboard.scores[0]["score"]
         return 0
@@ -164,11 +163,9 @@ class Game:
         self.leaderboard.add_score(name.upper(), self.score)
 
     def game_over(self):
-        """Handle game over state"""
         self.current_state = 'game_over'
 
     def reset_game(self):
-        """Reset the game to initial state"""
         self.score = 0
         self.lives = 3
         self.alien_speed = 1
@@ -182,7 +179,6 @@ class Game:
         self.current_highscore = self.get_current_highscore()
 
     def start_new_level(self):
-        """Initialize a new level"""
         self.aliens_group.empty()
         self.alien_lasers_group.empty()
         self.mystery_ship_group.empty()
