@@ -25,6 +25,7 @@ grid = [
 class Obstacle:
     def __init__(self, x, y):
         self.blocks_group = pygame.sprite.Group()
+        
         for row in range(len(grid)):
             for column in range(len(grid[0])):
                 if grid[row][column] == 1:
